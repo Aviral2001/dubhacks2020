@@ -9,11 +9,31 @@
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
         <!-- Load Posenet -->
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+        <!-- Load fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-    <!---add in menu on top-->
-
-    <h1>Hello Index.html</h1>
+        <!---add in menus-->
+        <div class="topnav">
+            <div class="topnav-right">
+            <a class= "active" href="index.html">Home</a>
+            <a href="using.html">Use Dancerflow</a>
+            <a href="results.html">Results</a>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class= "active" href="index.html">Home</a>
+            <a href="using.html">Use Dancerflow</a>
+            <a href="results.html">Results</a>
+        </div>
+        <div style="padding-bottom: 50px">
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        
+        <!-- begin content -->
+        <h1>Hello Index.html</h1>
 
     </body>
     <script src="script.js"></script>
