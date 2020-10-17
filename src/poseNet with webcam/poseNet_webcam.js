@@ -1,8 +1,3 @@
-// Copyright (c) 2018 ml5
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
 /*
  Human pose detection using machine learning.
  This code uses: 
