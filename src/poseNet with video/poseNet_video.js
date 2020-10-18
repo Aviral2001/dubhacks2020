@@ -12,9 +12,9 @@
 
 // ============= IMPORTANT ==============================
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
-let canvas_height = 720
-let canvas_width = 1280
-let video_path = 'mj_smooth_criminal.mp4'
+let canvas_height = 1068
+let canvas_width = 572
+let video_path = './../poseNet videos/SwagSteps.mp4'
 // ======================================================
 
 // variable for our video file
@@ -79,7 +79,7 @@ function modelReady() {
 */
  function vidLoad() {
   video.loop();
-  video.volume(0);
+  //video.volume(0);
 }
 
 /* function draw() is by P5.js:
