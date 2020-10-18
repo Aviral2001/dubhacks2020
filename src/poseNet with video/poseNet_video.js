@@ -14,7 +14,7 @@
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
 let canvas_height = 1068
 let canvas_width = 572
-let video_path = './../poseNet videos/SwagSteps.mp4'
+let video_path = './../poseNet videos/HipHopBasics.mov'
 // ======================================================
 
 // variable for our video file
