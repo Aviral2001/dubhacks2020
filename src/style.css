@@ -1,6 +1,9 @@
 h1 {
     font-family: Raleway, sans-serif;
+    font-size: 30px;
     text-align: center;
+    font-weight: 800;
+    padding-bottom: 16px;
 }
 h2, h3 {
     font-family: Raleway, sans-serif;
@@ -11,17 +14,19 @@ h2, h3 {
     align-items: flex-end;
     letter-spacing: -0.02em;
     text-align: center;
+    padding-bottom: 16px;
 }
 p, a, label {
     font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 25px;
     display: flex;
     align-items: flex-end;
     letter-spacing: -0.02em;
     text-align: center;
+    padding-bottom: 8px;
 }
 button {
     display: flex;
@@ -30,13 +35,20 @@ button {
     justify-content: center;
     font-family: Open Sans, sans-serif;
     font-size: 16px;
-    border: solid lightgray 3px;
+    border: solid #0739A8 3px;
     border-radius: 5px;
 }
 
 .container {
     display: flex;
     justify-content: center;
+}
+.grid-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin: 10px;
 }
 .description {
     display: block;
@@ -46,7 +58,13 @@ button {
     margin: auto;
 }
 #get-started {
-  background-color: lightgray;
+  width: 150px;
+  background-color: #0739A8;
+  color: white;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 /* STYLE ALL MENUS */
@@ -65,12 +83,12 @@ button {
 } 
 /* Change the color of links on hover */
 .topnav a:hover {
-    color: black;
+    color: #0739A8;
 }
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: lightgray;
-    color: black;
+    background-color: #0739A8;
+    color: white;
 }
 /* Right-aligned section inside the top navigation */
 .topnav-right {
@@ -117,14 +135,14 @@ button {
 }
 /* The button used to open the sidebar */
 .openbtn {
-    display: none;
-    float: left;
-    font-size: 40px;
-    cursor: pointer;
-    color: lightgray;
-    border: none;
+  display: none;
+  float: left;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: lightgray;
+  border: none;
 }
-
 /* FOR MOBILE/SMALL SCREENS */
 @media screen and (max-width: 500px) {
     .topnav {
@@ -149,8 +167,131 @@ button {
       height: 50px;
       width: 50px;
       float: left;
+      z-index: 0;
     }
     .grid-container {
       grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* BEGIN CAROUSEL */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62%;
+}
+
+.device {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -15.5rem;
+  margin-top: -20rem;
+  width: 300px;
+  height: 500px;
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+  -moz-box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+  box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+}
+
+/* start section css */
+
+ /* first div */
+.slide1 {
+  margin: 40px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-image: url("https://res.cloudinary.com/lenadi07/image/upload/v1468859826/forCodePen/mobileSlider/firstSlider/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+img.slide1-imgs {
+  width: 40%;
+  margin-left: 35px;
+}
+
+/* second div */
+.slide2 {
+  margin: 40px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  right: 20px;
+}
+.slide2-imgs {
+  justify-content: center;
+  margin: auto;
+  width: 57%;
+}
+
+/* third div */
+.slide3{
+  margin: 30px;
+  position: relative;
+  width: 400px;
+  height: 220px;
+}
+.slide3-imgs {
+ width: 60%;
+}
+.border {
+  position: absolute;
+  top: 30px;
+  left: 3px;
+  width: 320px;
+}
+.lines {
+  position: absolute;
+  top: 88px;
+  width: 33%;
+  left: 64px;
+}
+/* END MAIN IMAGES */
+
+/* MID */
+.mid {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9rem;
+  display: inline-block;
+}
+.mid h1 {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.mid p {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+/* BTM */
+.btm {
+ position: relative;
+ height: 10rem;
+}
+.next-btn button {
+  margin-top: 44px;
+  color: white;
+  background: #0739A8;
+  text-align: center;
+  width: 100%;
+  border: none;
+  height: auto;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
 }

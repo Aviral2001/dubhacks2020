@@ -7,3 +7,25 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
 }
+
+// BEGIN CAROUSEL
+$(document).ready(function() {
+
+  var owl = $("owl-demo");
+
+  $("#owl-demo").owlCarousel({
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true
+
+  });
+  $(".next").click(function(){
+    $("#owl-demo").trigger("owl.next");
+  })
+});
+
+function closeCarousel() {
+  document.getElementById("whole-car").style.display = "None";
+}
