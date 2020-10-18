@@ -1,12 +1,9 @@
 h1 {
+    font-family: Raleway, sans-serif;
     position: absolute;
-    width: 448px;
-    height: 56px;
-    left: 58px;
-    top: 344px;
 }
 h2, h3 {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -17,14 +14,32 @@ h2, h3 {
     letter-spacing: -0.02em;
 }
 p, a, label {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     display: flex;
     align-items: flex-end;
     letter-spacing: -0.02em;
+}
+button {
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans, sans-serif;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.description {
+    display: block;
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 /* STYLE ALL MENUS */
