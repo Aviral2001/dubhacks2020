@@ -10,31 +10,71 @@
         <!-- Load Posenet -->
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
         <!-- Load fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <!---add in menus-->
         <div class="topnav">
             <div class="topnav-right">
-            <a class= "active" href="index.html">Home</a>
-            <a href="using.html">Use Dancerflow</a>
+            <a href="index.html">Home</a>
+            <a class= "active" href="using.html">Dance</a>
             <a href="results.html">Results</a>
+            <a href="about.html">About</a>
             </div>
         </div>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a class= "active" href="index.html">Home</a>
-            <a href="using.html">Use Dancerflow</a>
+            <a href="index.html">Home</a>
+            <a class= "active" href="using.html">Dance</a>
             <a href="results.html">Results</a>
+            <a href="about.html">About</a>     
         </div>
         <div style="padding-bottom: 50px">
             <button class="openbtn" onclick="openNav()">☰</button>
         </div>
 
         <!-- begin content -->
-        <h1>Hello using.html</h1>
+        <h1>Get Started with DancerFlow</h1>
 
+        <div class="description">
+            <p>1. Choose a video or photo to compare yourself to. This can be a screenshot from a video, a recording from your phone, etc.</p>
+            <p>2. Watch as our website tracks your movements! Using the mappings, try to copy what is being shown on the screen.</p>
+        </div>
+
+      <div class="grid-container">
+        <div class="move-container">
+          <img src="img/move2.png" max-width="100%" height="auto"/>
+          <h2 style="padding-top:10px">Hip-hop Basics</h2>
+          <div class="container" style="padding-bottom: 30px">
+            <button id="get-started" onclick="runVid(0)">Try this move</button>
+          </div>
+        </div>
+        <div class="move-container">
+          <img src="img/move1.png" max-width="100%" height="auto"/>
+          <h2 style="padding-top:10px">Swag Steps</h2>
+          <div class="container" style="padding-bottom: 30px">
+            <button id="get-started" onclick="runVid(1)">Try this move</button>
+          </div>
+        </div>
+        <div class="move-container">
+          <img src="img/move3.png" max-width="100%" height="auto"/>
+        </div>
+
+        <!-- VIDEO PLAYER -->
+        <video>
+          <source src="video.mp4"></source>
+          <source src="video.ogv"></source>
+          <object data="flowplayer.swf" type="application/x-shockwave-flash">
+            <param name="movie" value="flowplayer.swf" />
+            <param name="flashvars" value='config={"clip":"video.mp4"}' />
+          </object>
+        </video>
+
+        <!-- Insert PoseNet features here-->
+        
+
+      </div>
     </body>
     <script src="script.js"></script>
 </html>

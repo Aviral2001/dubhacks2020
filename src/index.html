@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Welcome Page</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <!-- Load TensorFlow.js -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-        <!-- Load Posenet -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
-        <!-- Load fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Welcome Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Load Posenet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <!-- Load fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Load Carousel -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/lenadi07/raw/upload/v1468859092/forCodePen/owlPlugin/owl.theme.css"/>
+    <link rel="stylesheet" href="https://res.cloudinary.com/lenadi07/raw/upload/v1468859078/forCodePen/owlPlugin/owl.carousel.css"/>
+  </head>
     <body>
         <!---add in menus-->
         <div class="topnav">
             <div class="topnav-right">
             <a class= "active" href="index.html">Home</a>
-            <a href="using.html">Use Dancerflow</a>
+            <a href="using.html">Dance</a>
             <a href="results.html">Results</a>
+            <a href="about.html">About</a>
             </div>
         </div>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a class= "active" href="index.html">Home</a>
-            <a href="using.html">Use Dancerflow</a>
+            <a href="using.html">Dance</a>
             <a href="results.html">Results</a>
+            <a href="about.html">About</a>
         </div>
-        <div style="padding-bottom: 50px">
+        <div style="padding-bottom: 100px">
             <button class="openbtn" onclick="openNav()">☰</button>
         </div>
         
+        <!--BEGIN CAROUSEL-->
+      <div class="device" id="whole-car">
+        <div class="owl-carousel" id="owl-demo">
+          <div class="item">
+            <a href="javascript:void(0)" class="closebtn" style="padding:10px" onclick="closeCarousel()">×</a>
+            <div class="slide1">
+              <img class="slide1-imgs" src="img/fre1.png" alt="" />
+            </div>
+            <div class="mid">
+              <h1 style="padding-bottom:4px">Newbie Dancer?</h1>
+              <p>DancerFlow will give you immediate feedback to improve your technique.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="javascript:void(0)" class="closebtn" style="padding:10px" onclick="closeCarousel()">×</a>
+            <div class="slide2">
+                <img class="slide2-imgs" src="img/fre2.png" alt=""/>
+            </div>
+            <div class="mid">
+                <h1 style="padding-bottom:4px">One Move at a Time</h1>
+                <p>Pick from our selection of  dance moves and routines, or upload your own.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <a href="javascript:void(0)" class="closebtn" style="padding:10px" onclick="closeCarousel()">×</a>
+            <div class="slide3">
+              <img class="slide3-imgs" src="img/fre3.png" alt="" />
+            </div>
+          <div class="mid">
+            <h1 style="padding-bottom:4px">See Your Progress</h1>
+            <p>DancerFlow will save your scores, so you can track your improvement.</p>
+          </div>
+          </div>
+        </div>
+        <div class="next-btn">
+          <button type="button" name="button"><a class="btn next">Next</a></button>
+        </div>
+      </div>
+
         <!-- begin content -->
-        <h1>Hello Index.html</h1>
+        <div class="container" style="padding-top: 50px">
+            <img src="img/power-moves.png" alt="Artwork of a person dancing, surrounded by houseplants and colorful geometric shapes." class="responsive"/>
+        </div>
+
+        <h1>DancerFlow</h1>
+        <div class="description">
+            <p>Whether you want to learn a new dance routine, perfect your ballet moves, or learn a new tik tok dance practice makes perfect.</p>
+        </div>
+
+        <div class="container" style="padding-bottom: 30px">
+            <a href="using.html"><button id="get-started">Get Started</button></a>
+        </div>
 
     </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://res.cloudinary.com/lenadi07/raw/upload/v1468858437/forCodePen/owlPlugin/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </html>
