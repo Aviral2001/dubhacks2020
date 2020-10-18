@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Results Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- Load fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+		  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		  <!-- importing javascript libraries ML5 and P5 -->
+  		  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  		  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  		  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!---add in menus-->
+        <div class="topnav">
+            <div class="topnav-right">
+            <a href="index.html">Home</a>
+            <a href="using.html">Dance</a>
+            <a class= "active" href="results.html">Results</a>
+            <a href="about.html">About</a>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="using.html">Dance</a>
+            <a class= "active" href="results.html">Results</a>
+            <a href="about.html">About</a>
+        </div>
+        <div style="padding-bottom: 50px">
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <!-- begin content -->
+        <h1>Swag Steps</h1>
+		  <video controls>
+			  <source src="./../poseNet videos/SwagSteps_poseNet.mp4"
+						type="video/mp4">
+		  </video>
+		  <!-- Show this message while the intro is loading-->
+		  <p id='status'>Loading model...</p>
+		  <script src="poseNet_webcam.js"></script>
+    </body>
+    <script src="script.js"></script>
+</html>
